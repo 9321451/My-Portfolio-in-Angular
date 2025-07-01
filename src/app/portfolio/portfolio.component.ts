@@ -12,21 +12,21 @@ export class PortfolioComponent {
     {
       title: 'Airbnb Clone',
       image: 'assets/airbnb.png',
-      animation: 'animate__jackInTheBox',
+      animation: 'animate__zoomIn',
       technologies: ["Ejs", 'JavaScript', 'Node.js', 'Express', 'MongoDB'],
       description: 'A clone of the Airbnb website with features like user authentication, property listings, and booking functionality.'
     },
     {
       title: 'Ev Nation Website',
       image: 'assets/evnation.png',
-      animation: 'animate__jackInTheBox',
+      animation: 'animate__zoomIn',
       technologies: ["Angular", 'TypeScript', "Bootstrap", "Mongodb", "Node.js", "Express"],
       description: 'A website for an electric vehicle rental service, showcasing available vehicles and booking options.'
     },
     {
       title: 'Toyota Website clone',
       image: 'assets/toyota.png',
-      animation: 'animate__jackInTheBox',
+      animation: 'animate__zoomIn',
       technologies: ["React", "Bootstrap", "Node.js"],
       description: 'A clone of the Toyota website, featuring vehicle listings and a booking system.'
     },
@@ -34,8 +34,8 @@ export class PortfolioComponent {
     {
       title: 'Little Lemon front',
       image: 'assets/lemon.png',
-      animation: 'animate__jackInTheBox',
-      technologies: ["HTML", "CSS"],
+      animation: 'animate__zoomIn',
+      technologies: ["React.js","Bootstrap","HTML", "CSS"],
       description: 'A front-end project showcasing a restaurant website with a focus on UI/UX design.'
     }
   ];

@@ -1,56 +1,57 @@
 <header class="custom-header sticky-top bg-transparent py-3">
   <div class="container">
-    <div class="d-flex align-items-center justify-content-between">
-      
-      <!-- Logo -->
-      <a href="index.html" class="d-flex align-items-center underline-none">
-        <h2 class="nav-name">Muhammad Umaid</h2>
-      </a>
+    <div class="d-flex align-items-center justify-content-between gap-4">
 
-      <!-- Desktop Nav -->
-      <nav class="d-none d-xl-block ">
-        <ul class="tmp-mainmenu nav nav-pills gap-4">
+      <!-- Name Section -->
+      <div class="d-flex align-items-center">
+        <a href="index.html" class="d-flex align-items-center underline-none">
+          <h2 class="nav-name mb-0">Muhammad Umaid</h2>
+        </a>
+      </div>
+
+      <!-- Navigation Section -->
+      <div class="flex-grow-1 d-none d-xl-block">
+        <nav>
+          <ul class="tmp-mainmenu nav nav-pills justify-content-center align-items-center gap-4 mb-0">
             <li class="nav-item">
-               <a class="nav-link custom-nav-link" [ngClass]="{'active-link': activeSection === 'home'}" routerLink="/" fragment="home">Home</a>
+              <a class="nav-link custom-nav-link" [ngClass]="{'active-link': activeSection === 'home'}" routerLink="/" fragment="home">Home</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link custom-nav-link" [ngClass]="{'active-link': activeSection === 'skills'}" routerLink="/" fragment="skills">Services</a>
+              <a class="nav-link custom-nav-link" [ngClass]="{'active-link': activeSection === 'skills'}" routerLink="/" fragment="skills">Services</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link custom-nav-link" [ngClass]="{'active-link': activeSection === 'about'}" routerLink="/" fragment="about">About</a>
+              <a class="nav-link custom-nav-link" [ngClass]="{'active-link': activeSection === 'about'}" routerLink="/" fragment="about">About</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link custom-nav-link" [ngClass]="{'active-link': activeSection === 'skill'}" routerLink="/" fragment="skill">Skills</a>
+              <a class="nav-link custom-nav-link" [ngClass]="{'active-link': activeSection === 'skill'}" routerLink="/" fragment="skill">Skills</a>
             </li>
             <li class="nav-item">
               <a class="nav-link custom-nav-link" [ngClass]="{'active-link': activeSection === 'portfolio'}" routerLink="/" fragment="portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link custom-nav-link" [ngClass]="{'active-link': activeSection === 'contact'}" routerLink="/" fragment="contact">Contact</a>
+              <a class="nav-link custom-nav-link" [ngClass]="{'active-link': activeSection === 'contact'}" routerLink="/" fragment="contact">Contact</a>
             </li>
-        </ul>
+          </ul>
+        </nav>
+      </div>
 
-      </nav>
-
-      <!-- Right Section -->
+      <!-- Icons Section -->
       <div class="d-flex align-items-center gap-3">
-
         <!-- Social Links -->
-        <div class="d-none d-md-flex gap-3">
-           <a href="#" class="icon-circle shadow-sm text-dark d-flex align-items-center justify-content-center">
-              <i class="fab fa-instagram"></i>
-           </a>
-           <a href="https://www.linkedin.com/in/muhammadumaid90068b366" class="icon-circle shadow-sm text-dark d-flex align-items-center justify-content-center">
-              <i class="fab fa-linkedin-in"></i>
-           </a>
-           <a href="https://github.com/9321451" class="icon-circle shadow-sm text-dark d-flex align-items-center justify-content-center">
-              <i class="fa-brands fa-github"></i>
-           </a>
-           <a href="https://www.facebook.com/muhammad.umaid.165" class="icon-circle shadow-sm text-dark d-flex align-items-center justify-content-center">
-              <i class="fab fa-facebook-f"></i>
-           </a>
+        <div class="d-none d-md-flex gap-3 align-items-center">
+          <a href="#" class="icon-circle shadow-sm text-dark d-flex align-items-center justify-content-center">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/muhammadumaid90068b366" class="icon-circle shadow-sm text-dark d-flex align-items-center justify-content-center">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/9321451" class="icon-circle shadow-sm text-dark d-flex align-items-center justify-content-center">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.facebook.com/muhammad.umaid.165" class="icon-circle shadow-sm text-dark d-flex align-items-center justify-content-center">
+            <i class="fab fa-facebook-f"></i>
+          </a>
         </div>
-
 
         <!-- Mobile Toggle -->
         <button class="btn btn-outline-secondary d-block d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
