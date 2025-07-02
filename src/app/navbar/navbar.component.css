@@ -100,3 +100,9 @@
 .offcanvas-title{
   color: #139bfd;
 }
+
+.offcanvas-header{
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #139bfd;
+  padding: 1rem 1.5rem;
+}
