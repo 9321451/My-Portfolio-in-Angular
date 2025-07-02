@@ -96,3 +96,7 @@
 .underline-none {
   text-decoration: none !important;
 }
+
+.offcanvas-title{
+  color: #139bfd;
+}
