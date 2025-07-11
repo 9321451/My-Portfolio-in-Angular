@@ -64,30 +64,31 @@
 </header>
 
 <!-- Offcanvas Side Nav for Mobile -->
-<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" #mobileoffcanvas>
   <div class="offcanvas-header">
     <h5 class="offcanvas-title">Muhammad Umaid</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
   </div>
   <div class="offcanvas-body">
     <ul class="nav flex-column gap-3">
       <li class="nav-item">
-        <a class="nav-link custom-nav-link" routerLink="/" fragment="home" data-bs-dismiss="offcanvas">Home</a>
+        <a class="nav-link custom-nav-link"
+         routerLink="/" fragment="home" (click)="closeOffcanvas()">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link custom-nav-link" routerLink="/" fragment="skills" data-bs-dismiss="offcanvas">Services</a>
+        <a class="nav-link custom-nav-link" routerLink="/" fragment="skills" (click)="closeOffcanvas()">Services</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link custom-nav-link" routerLink="/" fragment="about" data-bs-dismiss="offcanvas">About</a>
+        <a class="nav-link custom-nav-link" routerLink="/" fragment="about" (click)="closeOffcanvas()">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link custom-nav-link" routerLink="/" fragment="skill" data-bs-dismiss="offcanvas">Skills</a>
+        <a class="nav-link custom-nav-link" routerLink="/" fragment="skill" (click)="closeOffcanvas()">Skills</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link custom-nav-link" routerLink="/" fragment="portfolio" data-bs-dismiss="offcanvas">Portfolio</a>
+        <a class="nav-link custom-nav-link" routerLink="/" fragment="portfolio" (click)="closeOffcanvas()">Portfolio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link custom-nav-link" routerLink="/" fragment="contact" data-bs-dismiss="offcanvas">Contact</a>
+        <a class="nav-link custom-nav-link" routerLink="/" fragment="contact" (click)="closeOffcanvas()">Contact</a>
       </li>
     </ul>
     <div class="d-flex gap-3 mt-4">

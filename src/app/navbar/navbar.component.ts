@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { Router } from '@angular/router';
 import { HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {Offcanvas} from 'bootstrap';
+
 @Component({
   selector: 'app-navbar',
   imports: [RouterModule, CommonModule],
@@ -39,6 +41,18 @@ export class NavbarComponent {
         this.activeSection = id;
       }
     });
+  }
+
+  @ViewChild("mobileoffcanvas",{static: false}) mobileOffcanvas!: ElementRef;
+
+  closeOffcanvas(){
+    const offcanvasElement = document.getElementById('mobileMenu');
+    if(offcanvasElement){
+    const bsOffcanvas = Offcanvas.getInstance(offcanvasElement);
+    if(bsOffcanvas){
+      bsOffcanvas.hide();
+    }
+  }
   }
   
 }
