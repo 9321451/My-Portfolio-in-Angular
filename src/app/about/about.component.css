@@ -19,6 +19,7 @@
 .about-card {
   width: 220px;
   transition: all 0.3s ease;
+  background: #f9f9f9;
 }
 
 .about-card:hover {
