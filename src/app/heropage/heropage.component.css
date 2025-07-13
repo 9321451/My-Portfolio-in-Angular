@@ -1,7 +1,5 @@
 .hero-section {
-  height: 120vh;              /* Full viewport height */
-  min-height: 400px;          /* Prevent collapse on tiny screens */
-  max-height: 1000px;         /* Optional: cap on very large displays */
+  height: clamp(400px, 120vh, 1300px);        /* Optional: cap on very large displays */
   overflow: hidden;
   position: relative;
 }
