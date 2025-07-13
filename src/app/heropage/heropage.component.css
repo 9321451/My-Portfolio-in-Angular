@@ -4,6 +4,12 @@
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .hero-section {
+    height: 500px;
+  }
+}
+
 .hero-section::after {
   content: "";
   position: absolute;
