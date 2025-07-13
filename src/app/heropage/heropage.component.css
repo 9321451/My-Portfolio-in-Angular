@@ -1,6 +1,6 @@
 .hero-section {
   height: 120vh;              /* Full viewport height */
-  min-height: 600px;          /* Prevent collapse on tiny screens */
+  min-height: 400px;          /* Prevent collapse on tiny screens */
   max-height: 1000px;         /* Optional: cap on very large displays */
   overflow: hidden;
   position: relative;
