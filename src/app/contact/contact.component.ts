@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-
+import emailjs from 'emailjs-com';
+import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-contact',
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })
@@ -24,4 +25,27 @@ export class ContactComponent {
 
   cards.forEach(card => observer.observe(card));
 }
+
+formData = {
+    name: '',
+    phone: '',
+    email: '',
+    subject: '',
+    message: ''
+  };
+
+  sendEmail() {
+    emailjs.send(
+      'service_bzl0bwm',
+      'template_5axl2pl',
+      this.formData,
+      'C4oexlglH1oUfPoH4' // Your user ID from EmailJS
+    ).then(response => {
+      console.log('SUCCESS!', response.status, response.text);
+      alert("Your message has been sent!");
+    }, err => {
+      console.error('FAILED...', err);
+      alert("Oops, something went wrong.");
+    });
+  }
 }

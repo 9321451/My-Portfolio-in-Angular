@@ -37,30 +37,31 @@
       <!-- Right Column (Form) -->
       <div class="col-md-7">
         <h5 class="fw-semibold mb-4">GET IN TOUCH</h5>
-        <form>
-          <div class="row g-3">
-            <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Your Name" />
-            </div>
-            <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Phone Number" />
-            </div>
-            <div class="col-md-6">
-              <input type="email" class="form-control" placeholder="Your Email" />
-            </div>
-            <div class="col-md-6">
-              <input type="text" class="form-control" placeholder="Subject" />
-            </div>
-            <div class="col-12">
-              <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="text-white btn sub-btn w-100 rounded-pill">
-                Appointment Now <i class="fa-solid fa-arrow-right ms-2"></i>
-              </button>
-            </div>
-          </div>
-        </form>
+<form (ngSubmit)="sendEmail()" #contactForm="ngForm">
+  <div class="row g-3">
+    <div class="col-md-6">
+      <input type="text" class="form-control" placeholder="Your Name" [(ngModel)]="formData.name" name="name" required />
+    </div>
+    <div class="col-md-6">
+      <input type="text" class="form-control" placeholder="Phone Number" [(ngModel)]="formData.phone" name="phone" required />
+    </div>
+    <div class="col-md-6">
+      <input type="email" class="form-control" placeholder="Your Email" [(ngModel)]="formData.email" name="email" required />
+    </div>
+    <div class="col-md-6">
+      <input type="text" class="form-control" placeholder="Subject" [(ngModel)]="formData.subject" name="subject" />
+    </div>
+    <div class="col-12">
+      <textarea class="form-control" rows="4" placeholder="Your Message" [(ngModel)]="formData.message" name="message" required></textarea>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="text-white btn sub-btn w-100 rounded-pill">
+        Appointment Now <i class="fa-solid fa-arrow-right ms-2"></i>
+      </button>
+    </div>
+  </div>
+</form>
+
       </div>
     </div>
   </div>
