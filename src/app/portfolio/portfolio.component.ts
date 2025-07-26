@@ -1,15 +1,17 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgFor } from '@angular/common';
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-portfolio',
-  imports: [CommonModule, NgFor],
+  imports: [CommonModule, NgFor, RouterModule],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css'
 })
 export class PortfolioComponent {
-    portfolio = [
+   portfolio = [
     {
+      id: 1,
       title: 'Airbnb Clone',
       image: 'assets/airbnb.png',
       animation: 'animate__zoomIn',
@@ -17,6 +19,7 @@ export class PortfolioComponent {
       description: 'A clone of the Airbnb website with features like user authentication, property listings, and booking functionality.'
     },
     {
+      id: 2,
       title: 'Ev Nation Website',
       image: 'assets/evnation.png',
       animation: 'animate__zoomIn',
@@ -24,6 +27,7 @@ export class PortfolioComponent {
       description: 'A website for an electric vehicle rental service, showcasing available vehicles and booking options.'
     },
     {
+      id: 3,
       title: 'Toyota Website clone',
       image: 'assets/toyota.png',
       animation: 'animate__zoomIn',
@@ -32,6 +36,7 @@ export class PortfolioComponent {
     },
 
     {
+      id: 4,
       title: 'Little Lemon front',
       image: 'assets/lemon.png',
       animation: 'animate__zoomIn',

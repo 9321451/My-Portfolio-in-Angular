@@ -19,9 +19,9 @@
               {{ tech }}
             </span>
           </div>
-          <button class="btn btn-outline-secondary rounded-pill px-4">
+          <a [routerLink]="['/project-detail', project.id]" class="btn btn-outline-secondary rounded-pill px-4">
             View Details →
-          </button>
+          </a>
         </div>
       </div>
     </div>

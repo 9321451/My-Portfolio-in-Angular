@@ -1,0 +1,67 @@
+.floating-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  z-index: 1000;
+}
+
+/* Arrow button */
+.toggle-arrow {
+  background-color: #128c7e;
+  color: white;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Rows with icon and text */
+.icon-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+/* Text next to icon */
+.icon-label {
+  background-color: white;
+  color: #333;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Common icon buttons */
+.whatsapp-float,
+.resume-float {
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.resume-float {
+  background-color: #007bff;
+}
+
+.resume-icon,
+.whatsapp-icon {
+  font-size: 20px;
+}
+

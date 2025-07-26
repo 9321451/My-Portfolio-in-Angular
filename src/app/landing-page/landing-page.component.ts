@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from '../navbar/navbar.component';
 import { HeropageComponent } from "../heropage/heropage.component";
 import { SkillspageComponent } from "../skillspage/skillspage.component";
 import { Router, NavigationEnd } from '@angular/router';
 import { AboutComponent } from "../about/about.component";
 import { ContactComponent } from "../contact/contact.component";
-import { FooterComponent } from "../footer/footer.component";
 import { SkillsComponent } from "../skills/skills.component";
 import { PortfolioComponent } from "../portfolio/portfolio.component";
+import { FloatingIconsComponent } from "../floating-icons/floating-icons.component";
+import { EducationComponent } from '../education/education.component';
 @Component({
   selector: 'app-landing-page',
-  imports: [NavbarComponent, HeropageComponent, SkillspageComponent, AboutComponent, ContactComponent, FooterComponent, SkillsComponent, PortfolioComponent],
+  imports: [HeropageComponent, EducationComponent, SkillspageComponent, AboutComponent, ContactComponent, SkillsComponent, PortfolioComponent, FloatingIconsComponent],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css'
 })
