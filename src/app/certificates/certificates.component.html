@@ -12,7 +12,7 @@
           <h5 class="card-title">{{ cert.title }}</h5>
           <p class="card-subtitle mb-2 text-muted">{{ cert.platform }}</p>
           <p class="mb-2"><strong>Date:</strong> {{ cert.date }}</p>
-          <a *ngIf="cert.link" [href]="cert.link" target="_blank" class="btn btn-sm btn-primary">
+          <a *ngIf="cert.link" [href]="cert.link" target="_blank" class="btn btn-sm" style="background: #139bfd; color: white;">
             View Certificate &rarr;
           </a>
         </div>

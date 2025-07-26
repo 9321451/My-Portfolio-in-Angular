@@ -11,16 +11,17 @@
 
 /* Arrow button */
 .toggle-arrow {
-  background-color: #128c7e;
+  background-color: #139bfd;
   color: white;
   border-radius: 50%;
-  width: 45px;
-  height: 45px;
+  width: 30px;
+  height: 30px;
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  margin-right: 8px;
 }
 
 /* Rows with icon and text */
