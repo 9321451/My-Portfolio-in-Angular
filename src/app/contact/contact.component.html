@@ -3,10 +3,10 @@
   <div class="gradient-overlay"></div>
 
   <!-- Main contact container -->
-  <div class="container bg-transparent rounded-4 shadow p-5 my-5 position-relative animate-on-scroll" data-animation="animate__zoomIn">
+  <div class="container bg-transparent rounded-4 shadow p-5 my-5 position-relative " >
     <div class="row g-5 align-items-center">
       <!-- Left Column -->
-      <div class="col-md-5 bg-transparent rounded-4 p-4 shadow-sm">
+      <div class="col-md-5 bg-transparent rounded-4 p-4 shadow-sm animate-on-scroll" data-animation="animate__zoomIn">
         <h2 class="fw-bold mb-4">Get Ready To<br />Create Great</h2>
 
         <div class="d-flex align-items-start mb-3">
@@ -55,7 +55,7 @@
       <textarea class="form-control" rows="4" placeholder="Your Message" [(ngModel)]="formData.message" name="message" required></textarea>
     </div>
     <div class="col-12">
-      <button type="submit" class="text-white btn sub-btn w-100 rounded-pill">
+      <button type="submit" class="text-white btn sub-btn w-100 rounded-pill animate-on-scroll" data-animation="animate__flipInX">
         Appointment Now <i class="fa-solid fa-arrow-right ms-2"></i>
       </button>
     </div>

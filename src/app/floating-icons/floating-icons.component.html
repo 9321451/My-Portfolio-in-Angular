@@ -14,9 +14,23 @@
     ></i>
   </button>
 
-  <!-- Resume Button (only visible when toggled) -->
+  <!-- WhatsApp Button (always visible, label only on toggle) -->
+
   <div *ngIf="showResume" class="icon-row">
-    <span class="icon-label">Download Resume</span>
+    <span  class="icon-label">WhatsApp</span>
+    <a
+      href="https://wa.me/+923499321451"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Chat on WhatsApp"
+    >
+      <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a>
+  </div>
+
+  <!-- Resume Button (only visible when toggled) -->
+  <div  class="icon-row">
+    <span *ngIf="showResume" class="icon-label">Download Resume</span>
     <a
       href="assets/Umaid.pdf"
       download
@@ -27,16 +41,5 @@
     </a>
   </div>
 
-  <!-- WhatsApp Button (always visible, label only on toggle) -->
-  <div class="icon-row">
-    <span *ngIf="showResume" class="icon-label">WhatsApp</span>
-    <a
-      href="https://wa.me/+923499321451"
-      class="whatsapp-float"
-      target="_blank"
-      aria-label="Chat on WhatsApp"
-    >
-      <i class="fab fa-whatsapp whatsapp-icon"></i>
-    </a>
-  </div>
+  
 </div>

@@ -57,6 +57,9 @@
   transition: all 0.3s ease;
 }
 
+.whatsapp-float:hover, .resume-float:hover{
+  background: #139bfd;
+}
 .resume-float {
   background-color: #007bff;
 }
