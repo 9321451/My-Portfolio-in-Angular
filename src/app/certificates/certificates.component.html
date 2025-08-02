@@ -1,7 +1,7 @@
 <div class="container my-5">
   <h2 class="text-center mb-4" style="color: #139bfd;">Certificates</h2>
   <h2 class="fw-bold">Learning never stops — and certificates prove the journey.</h2>
-      <p class="text-muted">       
+      <p class="">       
        I’ve completed various online courses and training programs to sharpen my skills in web development, modern frameworks, and best practices. These certificates reflect my commitment to continuous growth and staying up-to-date with the evolving tech landscape.
       </p>
 
@@ -10,7 +10,7 @@
       <div class="card h-100 shadow-sm">
         <div class="card-body">
           <h5 class="card-title">{{ cert.title }}</h5>
-          <p class="card-subtitle mb-2 text-muted">{{ cert.platform }}</p>
+          <p class="card-subtitle mb-2">{{ cert.platform }}</p>
           <p class="mb-2"><strong>Date:</strong> {{ cert.date }}</p>
           <a *ngIf="cert.link" [href]="cert.link" target="_blank" class="btn btn-sm" style="background: #139bfd; color: white;">
             View Certificate &rarr;

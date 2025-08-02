@@ -1,18 +1,30 @@
 <div class="floating-icons">
   <!-- Toggle Arrow Button -->
   <button
-    (click)="toggleResumeIcon()"
-    class="toggle-arrow"
-    aria-label="Toggle download button"
+  (click)="toggleResumeIcon()"
+  class="toggle-arrow"
+  aria-label="Toggle download button"
+>
+  <i
+    class="fas"
+    [ngClass]="[
+      animationClass,
+      showResume ? 'fa-chevron-down' : 'fa-chevron-up'
+    ]"
+  ></i>
+</button>
+
+<!-- Dark Mode Toggle Icon Row -->
+<div *ngIf="showResume" class="icon-row">
+  <span class="icon-label">Dark Mode</span>
+  <button
+    (click)="toggleDarkMode()"
+    class="darkmode-float"
+    aria-label="Toggle Dark Mode"
   >
-    <i
-      class="fas"
-      [ngClass]="{
-        'fa-chevron-up': !showResume,
-        'fa-chevron-down': showResume
-      }"
-    ></i>
+    <i class="fas" [ngClass]="isDarkMode ? 'fa-sun' : 'fa-moon'"></i>
   </button>
+</div>
 
   <!-- WhatsApp Button (always visible, label only on toggle) -->
 

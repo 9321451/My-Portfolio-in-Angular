@@ -57,6 +57,20 @@
   transition: all 0.3s ease;
 }
 
+.darkmode-float {
+  background-color: #333;
+  color: #139bfd;
+  font-size: 20px;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
 .whatsapp-float:hover, .resume-float:hover{
   background: #139bfd;
 }
@@ -67,5 +81,18 @@
 .resume-icon,
 .whatsapp-icon {
   font-size: 20px;
+}
+
+@keyframes jumpUp {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+.jump-loop {
+  animation: jumpUp 0.4s ease infinite;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
 }
 

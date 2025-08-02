@@ -7,9 +7,23 @@ import { CommonModule } from '@angular/common';
   styleUrl: './floating-icons.component.css'
 })
 export class FloatingIconsComponent {
-   showResume = false;
+  animationClass = 'jump-loop'; // start jumping on load
+showResume = false;
 
-  toggleResumeIcon() {
-    this.showResume = !this.showResume;
+toggleResumeIcon(): void {
+  this.showResume = !this.showResume;
+
+  // Stop the jump when user interacts (optional)
+  if (this.showResume) {
+    this.animationClass = ''; // stop jumping after click
   }
+}
+
+isDarkMode = false;
+
+toggleDarkMode(): void {
+  this.isDarkMode = !this.isDarkMode;
+  document.body.classList.toggle('dark-theme', this.isDarkMode);
+}
+
 }

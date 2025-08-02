@@ -25,6 +25,8 @@
   border: 2px solid #00c6ff;
   box-shadow: 0 10px 30px rgba(0, 123, 255, 0.15);
   transform: translateY(-5px);
+   background: 
+    radial-gradient(circle at bottom, rgba(61, 137, 219, 0.3), transparent 40%);
 }
 
 .service-card:hover::after {
@@ -41,3 +43,21 @@
   transition: opacity 0.4s ease-out;
 }
 
+.animate-on-scroll {
+  opacity: 0;
+  visibility: hidden;
+}
+
+:host-context(.dark-theme) .service-card{
+  background: 
+    radial-gradient(circle at top left, rgba(0, 123, 255, 0.3), transparent 40%);
+}
+
+:host-context(.dark-theme) .service-card:hover{
+  background: 
+    radial-gradient(circle at bottom, rgba(61, 137, 219, 0.3), transparent 40%);
+}
+
+:host-context(.dark-mode) p {
+  color: #c9c2c2;
+}

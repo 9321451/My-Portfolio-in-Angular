@@ -1,8 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --bg-color: rgb(232, 238, 240);
+  --text-color: #000000;
+  --para-color: rgba(33, 37, 41, 0.75);
+}
+
+.dark-theme {
+  --bg-color: #010A10;
+  --text-color: #ffffff;
+  --para-color: #c9c2c2;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-body{
-    background: rgb(232, 238, 240);
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+p {
+   color: var(--para-color);
 }

@@ -11,9 +11,9 @@
 
 .profile-img {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 40px;
   box-shadow: 0 20px 40px rgba(0, 217, 255, 0.4);
-  background: rgb(49, 47, 47);
+  background-color: rgb(209, 214, 214);
 }
 
 .about-card {
@@ -36,6 +36,24 @@
 }
 
 .bg-gradient-primary {
-  background: linear-gradient(to right, #00cfff, #008cff);
+  background: linear-gradient(to right, #139bfd, #008cff);
 }
 
+.animate-on-scroll {
+  opacity: 0;
+  visibility: hidden;
+}
+
+:host-context(.dark-theme) .about-card {
+  background: radial-gradient(circle at top left, rgba(0, 123, 255, 0.3), transparent 40%);
+  border: 1px solid #139bfd;
+}
+
+:host-context(.dark-theme) .about-card:hover {
+  background: radial-gradient(circle at bottom, rgba(61, 137, 219, 0.3), transparent 40%);
+  border: 2px solid #00c6ff;
+}
+
+:host-context(.dark-theme) .btn {
+  color: var(--para-color);
+}

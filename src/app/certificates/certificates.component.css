@@ -11,3 +11,16 @@
   transform: translateY(-5px);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
+
+:host-context(.dark-theme) p{
+  color: var(--para-color);
+}
+
+:host-context(.dark-theme) h5{
+  color: var(--text-color);
+}
+
+:host-context(.dark-theme) .card{
+  background: 
+    radial-gradient(circle at top left, rgba(0, 123, 255, 0.3), transparent 40%);
+}

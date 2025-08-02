@@ -3,7 +3,7 @@
 }
 
 .portfolio-card:hover {
-  border: 2px solid #00c6ff;
+  border: 2px solid #139bfd;
   box-shadow: 0 10px 30px rgba(0, 123, 255, 0.15);
   transform: translateY(-5px);
 }
@@ -17,7 +17,7 @@
   bottom: -2px;
   border-radius: 1rem;
   pointer-events: none;
-  box-shadow: 0 0 10px #00c6ff;
+  box-shadow: 0 0 10px #139bfd;
   opacity: 0.2;
   transition: opacity 0.4s ease-out;
 }
@@ -25,4 +25,23 @@
 .card-img-top {
   height: 260px;
   object-fit: cover;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  visibility: hidden;
+}
+
+:host-context(.dark-theme) .card{
+  background: radial-gradient(circle at top left, rgba(0, 123, 255, 0.3), transparent 40%);
+  border: 2px solid #139bfd;
+}
+
+:host-context(.dark-theme) h5{
+  color: var(--text-color);
+}
+
+:host-context(.dark-theme) span{
+  color: #139bfd;
+  background: #181c32;
 }

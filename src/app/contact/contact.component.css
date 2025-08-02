@@ -36,3 +36,25 @@ h2, h5 {
     background: #139bfd;
     
 }
+
+.animate-on-scroll {
+  opacity: 0;
+  visibility: hidden;
+}
+
+:host-context(.dark-theme) h2, h5{
+  color: var(--text-color);
+}
+
+:host-context(.dark-theme) .gradient-overlay{
+  background: 
+    radial-gradient(circle at top left, rgba(0, 123, 255, 0.2), transparent 40%);
+}
+
+:host-context(.dark-theme) .container{
+ border: 2px solid #139bfd;
+}
+
+:host-context(.dark-theme) .form-control{
+  background-color: #06131b;
+}

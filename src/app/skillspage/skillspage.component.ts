@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-skillspage',
   imports: [],
   templateUrl: './skillspage.component.html',
-  styleUrl: './skillspage.component.css'
+  styleUrl: './skillspage.component.css', // Use this if you want global styles to apply
 })
 export class SkillspageComponent {
   ngAfterViewInit(): void {
@@ -13,9 +13,12 @@ export class SkillspageComponent {
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        const animationClass = entry.target.getAttribute('data-animation');
-        entry.target.classList.add('animate__animated', animationClass || 'animate__fadeInUp');
-        observer.unobserve(entry.target); // animate once
+        const target = entry.target as HTMLElement;
+        const animationClass = target.getAttribute('data-animation') || 'animate__fadeInUp';
+        target.classList.add('animate__animated', animationClass);
+        target.style.opacity = '1';
+        target.style.visibility = 'visible';
+        observer.unobserve(target); // animate once
       }
     });
   }, {
@@ -24,5 +27,6 @@ export class SkillspageComponent {
 
   cards.forEach(card => observer.observe(card));
 }
+
 
 }

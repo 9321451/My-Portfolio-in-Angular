@@ -23,3 +23,24 @@
   flex-shrink: 0;
 }
 
+.animate-on-scroll {
+  opacity: 0;
+  visibility: hidden;
+}
+
+:host-context(.dark-theme) h6{
+  color: var(--para-color);
+}
+
+:host-context(.dark-theme) h5{
+  color: var(--text-color);
+}
+
+:host-context(.dark-theme) .btn{
+  color: var(--para-color);
+}
+
+:host-context(.dark-theme) .card{
+  background: radial-gradient(circle at top left, rgba(0, 123, 255, 0.3), transparent 40%),
+  radial-gradient(circle at bottom right, rgba(29, 39, 31, 0.329), transparent 50%);
+}
