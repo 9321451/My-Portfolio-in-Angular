@@ -16,7 +16,8 @@
 
 <!-- Dark Mode Toggle Icon Row -->
 <div *ngIf="showResume" class="icon-row">
-  <span class="icon-label">Dark Mode</span>
+  <span class="icon-label" *ngIf="!isDarkMode">Dark Mode</span>
+  <span class="icon-label" *ngIf="isDarkMode">Light Mode</span>
   <button
     (click)="toggleDarkMode()"
     class="darkmode-float"
