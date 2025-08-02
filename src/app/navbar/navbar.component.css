@@ -34,8 +34,16 @@
   border-bottom: 2px solid #139bfd;
 }
 
+:host-context(.dark-theme) .offcanvas-body {
+  background-color: #2a2a2a;
+}
+
 :host-context(.dark-theme) .offcanvas-title {
   color: #139bfd;
+}
+
+:host-context(.dark-theme) .text-dark {
+  color: var(--text-color) !important;
 }
 
 
