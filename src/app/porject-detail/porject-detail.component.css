@@ -1,0 +1,26 @@
+.mySwiper {
+  width: 100%;
+  padding: 0 40px; /* space for arrows */
+  box-sizing: border-box;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional styling */
+  border-radius: 50%;
+  color: white;
+  margin-top: 4px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 16px;
+}
+
+.img-thumbnail.border-primary {
+  border: 3px solid #0d6efd !important; /* Bootstrap primary color */
+}
