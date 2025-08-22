@@ -33,7 +33,9 @@
         </div>
       </div>
 
-      <button class="btn btn-outline-dark mt-4 rounded-pill px-4">Read More About Me ↓</button>
+      <button class="btn btn-outline-dark mt-4 rounded-pill px-4">
+        <a class="nav-link custom-nav-link" [ngClass]="{'active-link': activeSection === 'skill'}" routerLink="/" fragment="skill">Read More About Me ↓</a>
+      </button>
     </div>
   </div>
 </section>
