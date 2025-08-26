@@ -12,11 +12,11 @@ export class PortfolioComponent {
    portfolio = [
     {
       id: 1,
-      title: 'Airbnb Clone',
-      image: 'assets/airbnb.png',
+      title: 'NovaRide',
+      image: 'assets/Novaride.png',
       animation: 'animate__zoomIn',
-      technologies: ["Ejs", 'JavaScript', 'Node.js', 'Express', 'MongoDB'],
-      description: 'A clone of the Airbnb website with features like user authentication, property listings, and booking functionality.'
+      technologies: ["Angular", "Bootstrap", "TypeScript"],
+      description: 'A modern car rental platform with features like car listings, booking functionality, and a seamless user experience for both renters and owners.'
     },
     {
       id: 2,
@@ -42,6 +42,14 @@ export class PortfolioComponent {
       animation: 'animate__zoomIn',
       technologies: ["React.js","Bootstrap","HTML", "CSS"],
       description: 'A front-end project showcasing a restaurant website with a focus on UI/UX design.'
+    },
+    {
+      id:5,
+      title: "Airbnb clone",
+      image: 'assets/airbnb.png',
+      animation: 'animate__zoomIn',
+      technologies: ["Ejs", 'JavaScript', 'Node.js', 'Express', 'MongoDB'],
+      description: 'A clone of the Airbnb website with features like user authentication, property listings, and booking functionality.'
     }
   ];
 

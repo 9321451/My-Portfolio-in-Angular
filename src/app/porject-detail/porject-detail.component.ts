@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { portfolio } from '../data/portfolio-data'; // Assuming portfolio data is exported from this
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 import Swiper from 'swiper/bundle'; // Import Swiper bundle
 @Component({
   selector: 'app-porject-detail',
-  imports: [NgFor],
+  imports: [NgFor, NgIf],
   templateUrl: './porject-detail.component.html',
   styleUrl: './porject-detail.component.css'
 })
